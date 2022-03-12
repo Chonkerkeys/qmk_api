@@ -5,7 +5,7 @@ EXPOSE 8080
 
 WORKDIR /qmk_api
 COPY . /qmk_api
-RUN pip3 install -r requirements.txt git+git://github.com/qmk/qmk_compiler.git@master git+git://github.com/skullydazed/kle2xy.git@master
+RUN pip3 install -r requirements.txt git+git://github.com/Chonkerkeys/qmk_compiler.git@chonkerkeys_compile git+git://github.com/skullydazed/kle2xy.git@master
 RUN apt-get update
 RUN apt-get install -y nginx
 COPY nginx.conf /etc/nginx/nginx.conf
